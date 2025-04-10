@@ -9,16 +9,27 @@ const Header = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.container}>
-        <Link href="/" className={styles.logo}>sahD</Link>
+      {/* Badge on top-right, half outside */}
+      <img
+        src="/img1.webp"
+        alt="Great Place to Work"
+        className={styles.topBadge}
+      />
 
+      <div className={styles.container}>
+     
+        <img src="/logo.png" alt="Logo" className={styles.logoImage} />
+
+       
         <div className={`${styles.navLinks} ${open ? styles.open : ''}`}>
-          <Link href="/" className={styles.link}>Home</Link>
-          <Link href="/about" className={styles.link}>About</Link>
-          <Link href="/services" className={styles.link}>Services</Link>
+          <Link href="/" className={styles.link}>Service</Link>
+          <Link href="/about" className={styles.link}>Knowledge Centre</Link>
+          <Link href="/services" className={styles.link}>Careers</Link>
+          <Link href="/about-us" className={styles.link}>About Us</Link>
           <Link href="/contact" className={styles.link}>Contact</Link>
         </div>
 
+        {/* Mobile Menu Button */}
         <button className={styles.menuBtn} onClick={() => setOpen(!open)}>
           ☰
         </button>
