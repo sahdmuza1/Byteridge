@@ -1,12 +1,14 @@
 .navbar {
   background-color: white;
   padding: 10px 20px;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   height: 80px;
+
+  /* Fixed to top */
+  
+  
 }
 
 .container {
@@ -18,17 +20,14 @@
   position: relative;
 }
 
-/* Logo on left */
 .logoImage {
   height: 30px;
   object-fit: contain;
   display: flex;
   align-items: center;
   margin-top: 30px;
-  
 }
 
-/* Nav links on right */
 .navLinks {
   display: flex;
   gap: 30px;
@@ -41,7 +40,6 @@
   color: #333;
   font-weight: 500;
   position: relative;
-  
 }
 
 .link:hover::after {
@@ -54,7 +52,6 @@
   left: 0;
 }
 
-/* Hamburger for mobile */
 .menuBtn {
   display: none;
   background: none;
@@ -62,15 +59,11 @@
   cursor: pointer;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navLinks {
     display: none;
     flex-direction: column;
     background: white;
-    position: absolute;
-    top: 60px;
-    right: 0;
     padding: 20px;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -86,13 +79,12 @@
   }
 }
 
-
 .topBadge {
   position: fixed;
- 
-  right: 40px; 
+  right: 40px;
   width: 100px;
   z-index: 1000;
   margin-top: -10px;
   margin-right: 50px;
 }
+

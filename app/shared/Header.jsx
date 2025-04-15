@@ -9,18 +9,14 @@ const Header = () => {
 
   return (
     <nav className={styles.navbar}>
-      {/* Badge on top-right, half outside */}
       <img
         src="/img1.webp"
-        alt="Great Place to Work"
+        alt="Top Badge"
         className={styles.topBadge}
       />
-
       <div className={styles.container}>
-     
         <img src="/logo.png" alt="Logo" className={styles.logoImage} />
 
-       
         <div className={`${styles.navLinks} ${open ? styles.open : ''}`}>
           <Link href="/" className={styles.link}>Service</Link>
           <Link href="/about" className={styles.link}>Knowledge Centre</Link>
@@ -29,7 +25,6 @@ const Header = () => {
           <Link href="/contact" className={styles.link}>Contact</Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button className={styles.menuBtn} onClick={() => setOpen(!open)}>
           ☰
         </button>
