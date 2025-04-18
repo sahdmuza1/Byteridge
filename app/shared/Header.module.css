@@ -1,73 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 .navbar {
   background-color: white;
-  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   height: 80px;
-
-  /* Fixed to top */
-  
-  
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: visible; /* <-- Important */
 }
-
-.container {
+.innerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
   position: relative;
+}
+
+.logoWrapper {
+  flex: 1;
 }
 
 .logoImage {
   height: 30px;
   object-fit: contain;
-  display: flex;
-  align-items: center;
   margin-top: 30px;
 }
 
 .navLinks {
+  flex: 2;
   display: flex;
+  justify-content: center;
   gap: 30px;
-  margin-right: 120px;
   margin-top: 30px;
 }
 
 .link {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .link:hover::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
-  background: #edf114;
+  height: 4px;
+  background:  #f1f116;
   bottom: -4px;
   left: 0;
 }
 
+.badgeWrapper {
+  position: absolute;
+  right: 80;
+  top: -10px;
+  bottom: -20px; /* Half of badge height (adjust if needed) */
+  z-index: 99;
+  
+}
+
+.topBadge {
+  height: 170px;
+  width: auto;
+  object-fit: contain;
+  
+}
 .menuBtn {
   display: none;
   background: none;
-  font-size: 24px;
+  font-size: 28px;
+  border: none;
   cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }
 
 @media (max-width: 768px) {
   .navLinks {
-    display: none;
-    flex-direction: column;
-    background: white;
-    padding: 20px;
+    display: none; /* FIXED */
+    position: absolute;
+    top: 20px; /* better alignment under the navbar */
+    left: 0;
     width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 40px;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 10px 0;
+    z-index: 998;
   }
 
   .open {
@@ -77,14 +106,68 @@
   .menuBtn {
     display: block;
   }
+
+  .topBadge {
+    height: 105px;
+    width: auto;
+    object-fit: contain;
+  }
+  .badgeWrapper {
+    position: absolute;
+    right: 80;
+    top: -6px;
+    bottom: -20px;
+    z-index: 99;
+  }
+
+  .logoImage{
+    height: 27px;
+    width: auto;
+   margin-top: 10px;
+   
+  }
+
+  .navLinks {
+    max-height: 0;
+    overflow:visible;
+    transition: max-height 0.2s ease-in-out;
+  }
+
+  .open {
+    max-height: 500px;
+    
+  }
+  
+  .navbar {
+    height: 50px; /* reduce navbar height in mobile */
+    padding: 5px 0;
+  }
+
+  .menuBtn {
+    font-size: 25px;         /* 👈 Adjust size */
+    font-weight:lighter;       /* 👈 Make it bolder if needed */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #201f1f;             /* 👈 Set color */
+    z-index: 999;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  
+
+  .link:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #f1f116;
+    bottom: -4px;
+    left: 0;
+  }
 }
 
-.topBadge {
-  position: fixed;
-  right: 40px;
-  width: 100px;
-  z-index: 1000;
-  margin-top: -10px;
-  margin-right: 50px;
-}
 
