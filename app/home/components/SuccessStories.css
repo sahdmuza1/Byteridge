@@ -1,0 +1,82 @@
+.stories-section {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .stories-heading {
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 4px solid #f8d90f;
+    padding-left: 12px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+  
+  .stories-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .story-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s;
+  }
+  
+  .story-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .story-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .story-client {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .story-client span {
+    color: #f0b400;
+    font-size: 18px;
+  }
+  
+  .story-title {
+    font-size: 14px;
+    color: #1a237e;
+    margin-top: 4px;
+    font-weight: 500;
+  }
+  
+  .story-description {
+    font-size: 14px;
+    color: #444;
+    margin-top: 8px;
+  }
+  
+  .view-more {
+    margin-top: 40px;
+  }
+  
+  .view-more a {
+    color: #1a237e;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  

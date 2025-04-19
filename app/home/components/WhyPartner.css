@@ -1,0 +1,48 @@
+.why-partner-section {
+    background-color: #001489;
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  .why-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-left: 5px solid #f8d90f;
+    padding-left: 15px;
+  }
+  
+  .why-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+  
+  .why-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .why-icon {
+    font-size: 30px;
+    color: #f8d90f;
+  }
+  
+  .why-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .why-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d3d3d3;
+  }
+  

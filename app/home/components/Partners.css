@@ -1,0 +1,50 @@
+.partners-section {
+    background-color: #001489;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .partners-heading {
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 4px solid #f8d90f;
+    padding-left: 12px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+  }
+  
+  .partners-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #d4d8e5;
+  }
+  
+  .partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .partner-logo-card {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partner-logo-card img {
+    max-height: 40px;
+    object-fit: contain;
+  }
+  

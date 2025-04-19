@@ -6,4 +6,10 @@ html, body {
   min-height: 100vh; /* allows page to grow with content */
   overflow-x: hidden; /* prevents side scroll */
   font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+
+
+
+
+  
 }

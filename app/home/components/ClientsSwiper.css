@@ -1,0 +1,43 @@
+.clients-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .clients-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #001489;
+    border-left: 5px solid #f8d90f;
+    padding-left: 15px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+  
+  .client-swiper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .client-logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 10px;
+  }
+  
+  .client-logo-box img {
+    max-height: 60px;
+    max-width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .client-logo-box img:hover {
+    filter: grayscale(0%);
+  }
+  
