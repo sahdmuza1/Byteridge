@@ -1,12 +1,12 @@
+'use client';
 import React from 'react'
-
+import styles from './Footer.css'
+    
 const Footer = () => {
   return (
-    import React from 'react';
-    import './Footer.css';
+   
     
-    const Footer = () => {
-      return (
+  
         <footer className="footer">
           <div className="footer-content">
             <div className="footer-column">
@@ -67,7 +67,3 @@ const Footer = () => {
     
     export default Footer;
     
-  )
-}
-
-export default Footer
